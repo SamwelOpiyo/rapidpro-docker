@@ -106,7 +106,7 @@ if AWS_STORAGE_BUCKET_NAME:
 
         DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 else:
-    STORAGE_URL = HOSTNAME + MEDIA_URL
+    STORAGE_URL = "http://" + HOSTNAME + MEDIA_URL
 
 STORAGE_URL = STORAGE_URL if STORAGE_URL[-1] != "/" else STORAGE_URL[:-1]
 
