@@ -135,6 +135,9 @@ Environment variables
   Comma separate list of IP addresses to white list for 3rd party channel
   integrations
 
+*EMAIL_BACKEND*
+  Defaults to ``django.core.mail.backends.smtp.EmailBackend``
+
 *EMAIL_HOST*
   Defaults to ``smtp.gmail.com``
 
@@ -209,6 +212,9 @@ Environment variables
 
 *BRANDING_ALLOW_SIGNUPS*
   Boolean for whether or not to allow signups, defaults to ``True``.
+
+*USE_RAVEN*
+   If true, sets up raven and sentry for logging.
 
 *RAVEN_DSN*
   The DSN for Sentry
