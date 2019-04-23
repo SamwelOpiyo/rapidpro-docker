@@ -209,3 +209,9 @@ for brand in BRANDING.values():
     )
     context["brand"] = dict(slug=brand["slug"], styles=brand["styles"])
     COMPRESS_OFFLINE_CONTEXT.append(context)
+
+# -----------------------------------------------------------------------------------
+# Mailroom
+# -----------------------------------------------------------------------------------
+MAILROOM_URL = env("MAILROOM_URL", "")
+MAILROOM_AUTH_TOKEN = env("MAILROOM_AUTH_TOKEN", None)
